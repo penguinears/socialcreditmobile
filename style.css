@@ -1,0 +1,173 @@
+/* ============================
+   BASE THEME (DESKTOP)
+   ============================ */
+body{
+  background:#b30000;
+  color:#ffd700;
+  font-family:"Varela Round";
+  margin:0;
+  overflow:hidden;
+}
+
+/* BANNER */
+#banner{
+  position:fixed;
+  top:-60px;
+  left:0;
+  width:100%;
+  background:#ffd700;
+  color:#b30000;
+  text-align:center;
+  padding:15px;
+  font-weight:bold;
+  font-family:"Varela Round";
+  transition:top 0.4s ease;
+  z-index:9999;
+}
+
+/* TITLE BAR */
+#title_container{
+  height:140px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#8b0000;
+  border-bottom:4px solid #ffd700;
+}
+
+#title{
+  font-family:"Bungee Outline";
+  font-size:48px;
+}
+
+/* JOIN + CHAT LAYOUT */
+#join_container,
+#chat_container{
+  display:flex;
+  justify-content:center;
+  margin-top:30px;
+}
+
+#join_inner_container,
+#chat_inner_container{
+  width:420px;
+}
+
+/* INPUTS */
+input{
+  width:100%;
+  padding:10px;
+  text-align:center;
+  border:none;
+  border-bottom:2px dashed #ffd700;
+  background:transparent;
+  color:#ffd700;
+}
+
+/* BUTTONS */
+button{
+  margin-top:10px;
+  width:100%;
+  padding:10px;
+  font-weight:bold;
+  background:#ffd700;
+  color:#b30000;
+  cursor:pointer;
+}
+
+/* CHAT BOX */
+#chat_content_container{
+  height:320px;
+  overflow-y:auto;
+  margin-bottom:10px;
+}
+
+/* MESSAGES */
+.message_container{
+  margin-bottom:10px;
+}
+
+.vote{
+  cursor:pointer;
+  font-size:18px;
+  margin:0 5px;
+}
+
+.score{
+  font-weight:bold;
+}
+
+.system-name{
+  color:#ffd700;
+}
+
+.system-msg{
+  font-style:italic;
+}
+
+/* ============================
+   MOBILE VERSION (phones only)
+   ============================ */
+@media only screen and (max-width: 600px) {
+
+  body {
+    overflow: auto;
+    background: #b30000;
+    padding-bottom: 40px;
+  }
+
+  #title_container {
+    height: 90px;
+    padding: 0 10px;
+  }
+
+  #title {
+    font-size: 30px;
+    text-align: center;
+    line-height: 1.2;
+  }
+
+  #join_inner_container,
+  #chat_inner_container {
+    width: 95%;
+  }
+
+  input {
+    font-size: 18px;
+    padding: 14px;
+    border-bottom: 3px dashed #ffd700;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 14px;
+    border: 3px solid #ffd700;
+  }
+
+  #chat_content_container {
+    height: calc(100vh - 260px);
+    overflow-y: scroll;
+    border: 2px solid #ffd700;
+    padding: 10px;
+    background: #8b0000;
+  }
+
+  .message_container {
+    font-size: 18px;
+    padding: 6px 0;
+  }
+
+  .vote {
+    font-size: 26px;
+    margin: 0 10px;
+  }
+
+  .score {
+    font-size: 18px;
+  }
+
+  #banner {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
